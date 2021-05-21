@@ -50,6 +50,34 @@ if (array[i] % 5 ===0){
     str += ("oh")
   }
 }
+  if (array[i] % 6 ===0){
+ if(str != ""){
+    str += ("-yu-gi")
+  }else{
+    str += ("yu-gi")
+  }
+  }
+  if (array[i] % 10 ===0){
+ if(str != ""){
+    str += ("-yu-oh")
+  }else{
+    str += ("yu-oh")
+  }
+  }
+  if (array[i] % 15 ===0){
+ if(str != ""){
+    str += ("-gi-oh")
+  }else{
+    str += ("gi-oh")
+  }
+  }
+  if (array[i] % 30 ===0){
+ if(str != ""){
+    str += ("-yu-gi-oh")
+  }else{
+    str += ("yu-gi-oh")
+  }
+}
 newArray.push(str)
  }else {
    newArray.push(array[i]) 
@@ -63,6 +91,3 @@ console.log(newArray);
 return newArray;
 };
 checkYuGiOh(5 );
-
-
-
